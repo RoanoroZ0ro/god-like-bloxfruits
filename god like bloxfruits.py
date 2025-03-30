@@ -40,7 +40,7 @@ def main():
     global hold_v_until, hold_c_until
 
     print("Press [F12] to pause/resume, [ESC] to quit.")
-    print("Press 'v' (6 sec), 'c' (3 sec), and 'a' for auto-click.")
+    print("Press 'v' (6 sec), 'c' (3 sec).")
 
     with Listener(on_press=on_press) as listener:
         while running:
@@ -53,8 +53,6 @@ def main():
                     print('key v press up...')
                     pyautogui.press('enter')
                     time.sleep(2)
-                    
-                    
 
                 time.sleep(0.1)  # Small delay to prevent excessive CPU usage
 
